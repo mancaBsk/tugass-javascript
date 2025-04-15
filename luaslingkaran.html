@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cari luas lingkaran</title>
+</head>
+
+<body>
+  <form onsubmit="return false">
+    <label for="jari">masukan jari-jari</label>
+    <input type="number" id="jari_jari">
+    <button onclick="hitung_luaslingkaran()">hitung luas</button>
+  </form>
+  <div id="hasil"></div>
+
+  <script>
+    function hitung_luaslingkaran() {
+      const PI = 3.14;
+      let jari = (document.getElementById('jari_jari').value)
+      let hasil = PI * jari * jari
+      document.getElementById('hasil').innerHTML = "luas lingkaran=" + hasil
+    }
+  </script>
+</body>
+
+</html>

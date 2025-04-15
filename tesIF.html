@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tes IF</title>
+</head>
+<body>
+  <form onsubmit="return false"></form>
+   <label for="X">X</label>
+   <input type="number" id="ex"><br>
+   <label for="Y">Y</label>
+   <input type="number" id="ye">
+   <button onclick="cek_nilai()">cek nilai</button>
+   <div id="hasil1"></div>
+   <script>
+    function cek_nilai () {
+      let x = parseInt(document.getElementById('ex').value)
+      let y = parseInt(document.getElementById('ye').value)
+      let P = x + y 
+      document.getElementById('hasil1').innerHTML = "P =" + P
+      if (P >= 0) {
+          var q = x * y
+       } else {
+          var q = x / y
+       }
+       document.getElementById('hasil1').innerHTML = "Q =" + q
+      }
+                                                                                                                                                                        
+   </script>
+</body>
+</html>

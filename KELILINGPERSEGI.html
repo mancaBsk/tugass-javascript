@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>keliling persegi</title>
+</head>
+
+<body>
+  <form onsubmit="return false">
+    <label for="">masukan sisi</label>
+    <input type="number" id="sisi">
+    <button onclick="hitungkeliling()">hitung luas</button>
+  </form>
+  <div id="hasil"></div>
+  <script>
+    function hitungkeliling() {
+      let sisi = parseInt(document.getElementById('sisi').value)
+      let hasil = sisi + sisi + sisi + sisi
+      document.getElementById('hasil').innerHTML = "keliling persegi =" + hasil
+    }
+  </script>
+</body>
+
+</html>

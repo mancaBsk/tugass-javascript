@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cari luas persegi</title>
+</head>
+
+<body>
+  <form onsubmit="return false">
+    <label for="">masukan sisi</label>
+    <input type="number" id="sisi">
+    <button onclick="hitungluas()">hitung luas</button>
+  </form>
+  <div id="hasil"></div>
+  <div id="hasil2"></div>
+  <script>
+    function hitungluas() {
+      let sisi = parseInt(document.getElementById('sisi').value)
+      let hasil = sisi * sisi
+      document.getElementById('hasil').innerHTML = "luas persegi =" + hasil
+      let hasil2 = sisi + sisi + sisi + sisi
+      document.getElementById('hasil2').innerHTML = "keliling persegi =" + hasil2
+    }
+  </script>
+</body>
+
+</html>
